@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="button" value="">
+    <script>
+        // document.querySelector('input').onclick = function(){
+        //     // 1. 创建XMLHttpRequest对象
+        //     var xhr = new XMLHttpRequest();
+        //     // 2. 打开链接
+        //     // open(提交方式，提交地址)
+        //     xhr.open('get', 'http://xxxx?a=x&b=x');
+
+        //     // 3. 发送请求
+        //     xhr.send("username=xiaoming");
+
+        //     xhr.setRequestHeader('Content-Type:','application/json; charset=utf-8');
+
+        //     // 4. 接受数据
+        //     // onreadystatechange时刻监听服务器端状态的改变
+        //     xhr.onreadystatechange = function(){
+        //         // 服务器响应成功会调用这个回调函数
+        //         // 因为我跟服务器交互，服务器会进行处理，在处理的过程中会不断的给我一些状态 0，1，2，3，4
+        //         // 每个状态表示不同的含义，4表示响应完成，完成并不代表成功，比如404状态码，此时响应完成4，但响应并未成功，
+        //         // 所以需要通过响应状态码200来判断响应成功
+        //         // xhr.readyState == 4 表示响应完成
+        //         if (xhr.readyState == 4){
+        //             // xhr.status == 200 表示响应成功
+        //             if(xhr.status == 200){
+        //                 // xhr.responseText 用来接收服务端的响应数据
+        //                 var data = xhr.responseText
+        //             }
+        //         }
+        //     }
+        // }
+
+        var v = 1;
+        function f() {
+            console.log(v);
+        }
+
+        function b() {
+            var v = 2;
+            f();
+        }
+        b();
+
+    </script>
+</body>
+
+</html>
